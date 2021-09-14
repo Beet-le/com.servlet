@@ -10,9 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>servlet_01</module>
+        <module>servler_02</module>
     </modules>
     <dependencies>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
