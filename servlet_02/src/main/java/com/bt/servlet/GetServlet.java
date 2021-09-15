@@ -7,13 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class HelloServlet extends HttpServlet {
+public class GetServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext context=this.getServletContext();
-        String usename="BT777";//数据
-        context.setAttribute("usename",usename);//将一个数据保存在Servleat中;
-        System.out.println("hello");
+        String usename = (String) context.getAttribute("usename");
+        resp.setContentType("text/html");
+        resp.setCharacterEncoding("utf-8");
+        resp.getWriter().print("名字"+usename);
+    }
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
 }
