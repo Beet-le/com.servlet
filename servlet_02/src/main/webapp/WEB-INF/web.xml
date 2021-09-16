@@ -27,4 +27,12 @@
         <servlet-name>getc</servlet-name>
         <url-pattern>/getc</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>gp</servlet-name>
+        <servlet-class>com.bt.servlet.ServletDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gp</servlet-name>
+        <url-pattern>/gp</url-pattern>
+    </servlet-mapping>
 </web-app>
