@@ -6,7 +6,7 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1"
          metadata-complete="true">
-<!--    配置一些web应用中的初始化参数-->
+    <!--    配置一些web应用中的初始化参数-->
     <context-param>
         <param-name>url</param-name>
         <param-value>jdbc:mysql//localhost:3306/mybatis</param-value>
@@ -34,5 +34,14 @@
     <servlet-mapping>
         <servlet-name>gp</servlet-name>
         <url-pattern>/gp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sd4</servlet-name>
+        <servlet-class>com.bt.servlet.ServletDemo04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sd4</servlet-name>
+        <url-pattern>/s4</url-pattern>
     </servlet-mapping>
 </web-app>
