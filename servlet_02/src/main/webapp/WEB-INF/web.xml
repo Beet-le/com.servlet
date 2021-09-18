@@ -42,6 +42,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>sd4</servlet-name>
-        <url-pattern>/s4</url-pattern>
+        <url-pattern>/sd4</url-pattern>
     </servlet-mapping>
 </web-app>
