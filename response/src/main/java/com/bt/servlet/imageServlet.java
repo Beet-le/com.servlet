@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Random;
 
 public class imageServlet extends HttpServlet {
     @Override
@@ -21,6 +22,17 @@ public class imageServlet extends HttpServlet {
         g.setColor(Color.BLACK);
 
     }
+    private String makeNum(){
+        Random random = new Random();
+        String num = random.nextInt(9999999) + "";
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < 7-num.length() ; i++) {
+            sb.append("0");
+        }
+        num = sb.toString() + num;
+        return num;
+    }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
