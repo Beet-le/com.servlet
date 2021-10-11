@@ -26,11 +26,11 @@ public class LoginServlet extends HttpServlet {
         System. out.println(password);
         System. out.println(Arrays.toString(hobbys));
         System. out.println("============");
-        System. out.println(req.getContextPath());
+
         //通过请求转发
         //这里的/代表当前的web应用
-        req.getRequestDispatcher("/success.jsp").forward(req,resp);
-
+        req.getRequestDispatcher(req.getContextPath()+"/success.jsp").forward(req,resp);
+        resp.setCharacterEncoding("utf-8");
     }
 
     @Override
