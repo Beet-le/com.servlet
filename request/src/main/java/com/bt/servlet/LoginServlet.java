@@ -9,12 +9,7 @@ import java.util.Arrays;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /*String username = req.getParameter("username");
-        String password = req.getParameter("password");
-        String[] hobbys = req.getParameterValues("hobbys");
-        System.out.println(username);
-        System.out.println(password);
-        System.out.println(Arrays.toString(hobbys));*/
+
         req. setCharacterEncoding("utf-8");
         resp.setCharacterEncoding("utf-8");
         String username = req.getParameter("username");
@@ -29,8 +24,8 @@ public class LoginServlet extends HttpServlet {
 
         //通过请求转发
         //这里的/代表当前的web应用
-        req.getRequestDispatcher(req.getContextPath()+"/success.jsp").forward(req,resp);
-        resp.setCharacterEncoding("utf-8");
+        System.out.println(req.getContextPath());
+        req.getRequestDispatcher( "/success.jsp").forward(req,resp);
     }
 
     @Override
