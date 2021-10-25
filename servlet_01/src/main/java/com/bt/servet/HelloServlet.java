@@ -16,7 +16,6 @@ public class HelloServlet extends HttpServlet {
         System.out.println("进入DoGet方法");
         PrintWriter writer = resp.getWriter();//响应流
         writer.print("Hello , Servlet");
-
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
