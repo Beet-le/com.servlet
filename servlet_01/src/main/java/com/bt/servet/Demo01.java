@@ -8,7 +8,6 @@ public class Demo01 implements Servlet {
     public void init(ServletConfig servletConfig) throws ServletException {
 
     }
-
     @Override
     public ServletConfig getServletConfig() {
         return null;
