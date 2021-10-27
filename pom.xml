@@ -13,6 +13,8 @@
         <module>servlet_02</module>
         <module>response</module>
         <module>request</module>
+        <module>untitled</module>
+        <module>servlet_03</module>
     </modules>
     <dependencies>
         <dependency>
